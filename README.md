@@ -96,7 +96,7 @@ g++ spectrosdl.cpp -o spectrosdl -lSDL2 -lSDL2_mixer -lfftw3 -std=c++11
 3. Execute:
 
 ```bash
-./spectrosdl
+./spectrosdl arquivo.mp3
 ```
 
 ---
