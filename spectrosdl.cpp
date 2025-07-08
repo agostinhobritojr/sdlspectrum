@@ -42,7 +42,7 @@ void initWindowAndScale() {
   float maxLog = log10f(FFT_SIZE / 2.0f);
   for (int i = 0; i <= BANDS; ++i) {
     float logIndex = pow(10.0f, minLog + (maxLog - minLog) * i / BANDS) - 1.0f;
-    logscale[i] = std::clamp(logIndex, 0.0f, FFT_SIZE / 2.0f - 1.0f);
+    logscale[i] = CLAMP(logIndex, 0.0f, FFT_SIZE / 2.0f - 1.0f);
   }
 }
 
