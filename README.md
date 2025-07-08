@@ -48,7 +48,7 @@ pacman -S mingw-w64-x86_64-gcc \
 4. Compile o código:
 
 ```bash
-g++ spectrosdl.cpp -o spectrosdl.exe -lSDL2 -lSDL2_mixer -lfftw3 -std=c++11
+g++ spectrosdl.cpp -o spectrosdl.exe -lSDL2 -lSDL2_mixer -lGL -lGLU -lglut -lfftw3 -std=c++11 -lm
 ```
 
 5. Execute:
@@ -90,7 +90,7 @@ sudo apt install build-essential libsdl2-dev libsdl2-mixer-dev libfftw3-dev
 2. Compile o projeto:
 
 ```bash
-g++ spectrosdl.cpp -o spectrosdl -lSDL2 -lSDL2_mixer -lfftw3 -std=c++11
+g++ spectrosdl.cpp -o spectrosdl -lSDL2 -lSDL2_mixer -lGL -lGLU -lglut -lfftw3 -std=c++11 -lm
 ```
 
 3. Execute:
